@@ -6,7 +6,9 @@ class World{
         this.worldPosX = obj.worldPosX ?? 100;
         this.worldPosY = obj.worldPosY ?? 150;
         this.snake;
+        this.food;
         this.generateSnake();
+        this.generateFood();
     }
 
     renderWorld(){
@@ -28,7 +30,21 @@ class World{
 
     generateSnake(){
         this.snake = new Snake({
+        })
+    }
 
+    renderFood(){
+        push()
+        noLoop()
+        translate(this.worldPosX,this.worldPosY)
+        fill(0, 0, 255)
+        this.food.render();
+        pop()
+    }
+
+    generateFood(){
+        this.food = new Food({
+            
         })
     }
 }
