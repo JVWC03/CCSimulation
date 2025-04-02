@@ -5,14 +5,30 @@ class World{
         this.worldHeight = obj.worldHeight ?? 400;
         this.worldPosX = obj.worldPosX ?? 100;
         this.worldPosY = obj.worldPosY ?? 150;
-        this.snakes = [];
+        this.snake;
+        this.generateSnake();
     }
 
     renderWorld(){
         push()
         translate(this.worldPosX,this.worldPosY)
-        fill (68,85,90)
+        fill (181,176,176)
         rect(0,0,this.worldWidth,this.worldHeight)
         pop()
+    }
+
+    renderSnake(){
+        push()
+        noLoop()
+        translate(this.worldPosX,this.worldPosY)
+        fill(204, 102, 0)
+        this.snake.render();
+        pop()
+    }
+
+    generateSnake(){
+        this.snake = new Snake({
+
+        })
     }
 }

@@ -15,6 +15,7 @@ function setup(){
 
 function draw(){
     worlds[0].renderWorld()
+    worlds[0].renderSnake()
 }
 
 function keyPressed(){
