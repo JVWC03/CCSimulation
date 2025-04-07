@@ -22,6 +22,8 @@ function draw(){
     worlds[0].renderObstacles()
     worlds[0].checkObstacle()
     worlds[0].renderScore()
+    worlds[0].renderTimer()
+    worlds[0].updateTimer()
 }
 
 function keyPressed() {
