@@ -2,8 +2,8 @@ class Food {
     constructor(obj) {
         this.foodPosX = obj.foodPosX ?? random(0,400);
         this.foodPosY = obj.foodPosY ?? random(0,250);
-        this.foodWidth = obj.foodWidth ?? 8;
-        this.foodHeight = obj.foodHeight ?? 8;
+        this.foodWidth = obj.foodWidth ?? 12;
+        this.foodHeight = obj.foodHeight ?? 12;
     }
 
     render(){

@@ -19,6 +19,9 @@ function draw(){
     worlds[0].renderFood()
     worlds[0].moveSnake()
     worlds[0].checkDist()
+    worlds[0].renderObstacles()
+    worlds[0].checkObstacle()
+    worlds[0].renderScore()
 }
 
 function keyPressed() {
@@ -49,6 +52,3 @@ function keyPressed() {
     }
     redraw();
 }
-  
-  
-  

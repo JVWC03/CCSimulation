@@ -2,10 +2,10 @@ class Snake {
     constructor(obj) {
         this.snakePosX = obj.snakePosX ?? random(0,400);
         this.snakePosY = obj.snakePosY ?? random(0,250);
-        this.snakeVelX = obj.snakeVelX ?? 50;
-        this.snakeVelY = obj.snakeVelY ?? 50;
-        this.snakeWidth = obj.snakeWidth ?? 12;
-        this.snakeHeight = obj.snakeHeight ?? 12;
+        this.snakeVelX = obj.snakeVelX ?? 150;
+        this.snakeVelY = obj.snakeVelY ?? 150;
+        this.snakeWidth = obj.snakeWidth ?? 15;
+        this.snakeHeight = obj.snakeHeight ?? 15;
     }
 
     render(){
