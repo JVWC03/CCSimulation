@@ -19,4 +19,9 @@ class Food {
         endShape(CLOSE)
         pop()
     }
+
+    reposition() {
+        this.foodPosX = random(0, 400);
+        this.foodPosY = random(0, 250);
+    }
 }

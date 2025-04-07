@@ -35,7 +35,6 @@ class World{
 
     renderFood(){
         push()
-        noLoop()
         translate(this.worldPosX,this.worldPosY)
         fill(0, 0, 255)
         this.food.render();
@@ -44,7 +43,22 @@ class World{
 
     generateFood(){
         this.food = new Food({
-            
         })
+    }
+
+    moveSnake() {
+        this.snake.move();
+    }    
+
+    checkDist() {
+        let snake = this.snake;
+        let food = this.food;
+        
+        let dist = sqrt(sq(snake.snakePosX - food.foodPosX) + sq(snake.snakePosY - food.foodPosY));
+        
+        if (dist < (food.foodWidth / 2 + snake.snakeWidth / 2)) {
+            console.log("Food eaten!");
+            food.reposition();
+        }
     }
 }
