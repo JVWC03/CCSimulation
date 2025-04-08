@@ -112,8 +112,9 @@ class World{
     }
 
     updateTimer() {
-        if (frameCount % 60 === 0 && this.timer > 0) {
+        if (frameCount % 60 == 0 && this.timer > 0) {
           this.timer--;
+          redraw();
         }
       }
       
