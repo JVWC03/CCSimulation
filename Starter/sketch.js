@@ -32,24 +32,24 @@ function keyPressed() {
     if (key === "W") {
       console.log("Moving up");
       snake.snakeVelX = 0;
-      snake.snakeVelY = -6;
+      snake.snakeVelY = -2;
     }
   
     if (key === "S") {
       console.log("Moving down");
       snake.snakeVelX = 0;
-      snake.snakeVelY = 6;
+      snake.snakeVelY = 2;
     }
   
     if (key === "D") {
       console.log("Turning right");
-      snake.snakeVelX = 6;
+      snake.snakeVelX = 2;
       snake.snakeVelY = 0;
     }
   
     if (key === "A") {
       console.log("Turning left");
-      snake.snakeVelX = -6;
+      snake.snakeVelX = -2;
       snake.snakeVelY = 0;
     }
     redraw();
