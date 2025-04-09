@@ -52,5 +52,4 @@ function keyPressed() {
       snake.snakeVelX = -2;
       snake.snakeVelY = 0;
     }
-    redraw();
 }
